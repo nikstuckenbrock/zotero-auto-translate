@@ -1,0 +1,16 @@
+{
+  "manifest_version": 2,
+  "name": "Zotero Auto Translate",
+  "version": "1.0.0",
+  "description": "Automatically translates highlighted text of a chosen color and stores the translation in the annotation comment.",
+  "author": "Nik Stuckenbrock",
+  "homepage_url": "https://github.com/nikstuckenbrock/zotero-auto-translate",
+  "applications": {
+    "zotero": {
+      "id": "zotero-auto-translate@nikstuckenbrock.github.io",
+      "update_url": "https://github.com/nikstuckenbrock/zotero-auto-translate/releases/latest/download/updates.json",
+      "strict_min_version": "6.999",
+      "strict_max_version": "10.*"
+    }
+  }
+}
