@@ -1,0 +1,102 @@
+<vbox id="zotero-auto-translate-prefs">
+  <groupbox>
+    <label><html:h2>Auto Translate</html:h2></label>
+
+    <checkbox label="Automatically translate highlights" preference="extensions.zotero-auto-translate.enabled"/>
+
+    <hbox align="center">
+      <label value="Trigger color:" style="min-width: 10em"/>
+      <menulist preference="extensions.zotero-auto-translate.color">
+        <menupopup>
+          <menuitem label="🟨 Yellow" value="#ffd400"/>
+          <menuitem label="🟥 Red" value="#ff6666"/>
+          <menuitem label="🟩 Green" value="#5fb236"/>
+          <menuitem label="🟦 Blue" value="#2ea8e5"/>
+          <menuitem label="🟪 Purple" value="#a28ae5"/>
+          <menuitem label="Magenta" value="#e56eee"/>
+          <menuitem label="🟧 Orange" value="#f19837"/>
+          <menuitem label="⬜ Gray" value="#aaaaaa"/>
+        </menupopup>
+      </menulist>
+    </hbox>
+
+    <hbox align="center">
+      <label value="Translation service:" style="min-width: 10em"/>
+      <menulist preference="extensions.zotero-auto-translate.provider">
+        <menupopup>
+          <menuitem label="Google Translate (free, no key)" value="google"/>
+          <menuitem label="MyMemory (free, no key)" value="mymemory"/>
+          <menuitem label="DeepL API Free (free key required)" value="deepl"/>
+        </menupopup>
+      </menulist>
+    </hbox>
+
+    <hbox align="center">
+      <label value="Source language:" style="min-width: 10em"/>
+      <menulist preference="extensions.zotero-auto-translate.sourceLang">
+        <menupopup>
+          <menuitem label="Detect automatically" value="auto"/>
+          <menuitem label="English" value="en"/>
+          <menuitem label="German" value="de"/>
+          <menuitem label="French" value="fr"/>
+          <menuitem label="Spanish" value="es"/>
+          <menuitem label="Italian" value="it"/>
+          <menuitem label="Portuguese" value="pt"/>
+          <menuitem label="Dutch" value="nl"/>
+          <menuitem label="Polish" value="pl"/>
+          <menuitem label="Russian" value="ru"/>
+          <menuitem label="Ukrainian" value="uk"/>
+          <menuitem label="Turkish" value="tr"/>
+          <menuitem label="Chinese" value="zh"/>
+          <menuitem label="Japanese" value="ja"/>
+          <menuitem label="Korean" value="ko"/>
+          <menuitem label="Arabic" value="ar"/>
+        </menupopup>
+      </menulist>
+    </hbox>
+
+    <hbox align="center">
+      <label value="Target language:" style="min-width: 10em"/>
+      <menulist preference="extensions.zotero-auto-translate.targetLang">
+        <menupopup>
+          <menuitem label="English" value="en"/>
+          <menuitem label="German" value="de"/>
+          <menuitem label="French" value="fr"/>
+          <menuitem label="Spanish" value="es"/>
+          <menuitem label="Italian" value="it"/>
+          <menuitem label="Portuguese" value="pt"/>
+          <menuitem label="Dutch" value="nl"/>
+          <menuitem label="Polish" value="pl"/>
+          <menuitem label="Russian" value="ru"/>
+          <menuitem label="Ukrainian" value="uk"/>
+          <menuitem label="Turkish" value="tr"/>
+          <menuitem label="Chinese" value="zh"/>
+          <menuitem label="Japanese" value="ja"/>
+          <menuitem label="Korean" value="ko"/>
+          <menuitem label="Arabic" value="ar"/>
+        </menupopup>
+      </menulist>
+    </hbox>
+
+    <hbox align="center">
+      <label value="Comment prefix:" style="min-width: 10em"/>
+      <html:input type="text" placeholder="e.g. DE: " preference="extensions.zotero-auto-translate.prefix"/>
+    </hbox>
+
+    <hbox align="center">
+      <label value="DeepL API key:" style="min-width: 10em"/>
+      <html:input type="password" placeholder="xxxxxxxx-...:fx" preference="extensions.zotero-auto-translate.deeplKey"/>
+    </hbox>
+
+    <hbox align="center">
+      <label value="MyMemory e-mail:" style="min-width: 10em"/>
+      <html:input type="text" placeholder="optional, raises daily limit" preference="extensions.zotero-auto-translate.mymemoryEmail"/>
+    </hbox>
+
+    <description style="margin-top: 1em; color: GrayText">
+      Highlights or underlines made in the trigger color are translated and the
+      translation is added to the annotation comment. MyMemory does not detect
+      the language, so "Detect automatically" falls back to English there.
+    </description>
+  </groupbox>
+</vbox>
